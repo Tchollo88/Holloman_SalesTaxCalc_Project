@@ -66,7 +66,7 @@
             this.lblWarranty.AutoSize = true;
             this.lblWarranty.Location = new System.Drawing.Point(110, 142);
             this.lblWarranty.Name = "lblWarranty";
-            this.lblWarranty.Size = new System.Drawing.Size(161, 27);
+            this.lblWarranty.Size = new System.Drawing.Size(153, 27);
             this.lblWarranty.TabIndex = 10;
             this.lblWarranty.Text = "Type of Warranty: ";
             // 
@@ -74,10 +74,10 @@
             // 
             this.cmbVehicle.FormattingEnabled = true;
             this.cmbVehicle.Items.AddRange(new object[] {
+            "None",
             "One Year",
             "Two Year",
-            "Three Year",
-            "None"});
+            "Three Year"});
             this.cmbVehicle.Location = new System.Drawing.Point(298, 134);
             this.cmbVehicle.Name = "cmbVehicle";
             this.cmbVehicle.Size = new System.Drawing.Size(139, 35);
@@ -104,6 +104,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(139, 35);
             this.txtPrice.TabIndex = 0;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // lblVehicle
             // 
@@ -175,7 +176,7 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(428, 37);
             this.lblTitle.TabIndex = 7;
-            this.lblTitle.Text = "Lost But Found Car Slaes Calculator";
+            this.lblTitle.Text = "Lost But Found Car Sales Calculator";
             // 
             // frmMain
             // 

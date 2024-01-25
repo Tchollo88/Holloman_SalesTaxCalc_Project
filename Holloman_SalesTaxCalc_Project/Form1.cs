@@ -16,5 +16,13 @@ namespace Holloman_SalesTaxCalc_Project
         {
             InitializeComponent();
         }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.Handled = !char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+        }
     }
 }

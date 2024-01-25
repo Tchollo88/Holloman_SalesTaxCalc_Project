@@ -2,4 +2,10 @@
 WY Tax - 4%
 UT Tax - 4.7%
 OR Tax - None
-WA Tax - 6.5%
+WA Tax - 8.6%
+
+
+
+Type = 0 - 7
+Warranty = 0 - 3
+State = = 0 - 4
