@@ -1,8 +1,8 @@
 ﻿CA Tax - 7.25%
-WY Tax - 4%
-UT Tax - 4.7%
 OR Tax - None
+UT Tax - 4.7%
 WA Tax - 8.6%
+WY Tax - 4%
 
 
 Type = 0 - 7
