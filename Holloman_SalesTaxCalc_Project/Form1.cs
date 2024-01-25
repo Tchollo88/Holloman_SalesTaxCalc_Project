@@ -21,7 +21,7 @@ namespace Holloman_SalesTaxCalc_Project
         {
             if(e.Handled = !char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
             {
-                e.Handled = false;
+                e.Handled = true;
             }
         }
     }
