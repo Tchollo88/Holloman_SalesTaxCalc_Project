@@ -11,6 +11,21 @@ using static System.Windows.Forms.AxHost;
 
 namespace Holloman_SalesTaxCalc_Project
 {
+   /*
+          Programming I - IT111  
+          Todd Holloman                                 Holloman_SalesTaxCalc
+
+          Comment - I had a lot of fun putting this together, it wav very interesting to work with 
+          window designs forms and work it together to make this sales tax calculator. I wanted to 
+          add a larger variety to the states and make it a little more like you would find into the
+          world. At a later date I was planning on adding a cost change based on the type of vehicle 
+          you choose, just need to do more research on the affect it would normmaly cause to the price 
+          on an average.
+
+          Let me know what you think of my code and program, 
+          I really look forward to hear what you think.
+   */
+
     public partial class frmMain : Form
     {
         public frmMain()
@@ -18,16 +33,22 @@ namespace Holloman_SalesTaxCalc_Project
             InitializeComponent();
         }
 
+        /**Main Program**/
+
+        //Key Press - not used
         private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
         
         }
 
+        //Once presses exits program
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+
+        //Clears all veriable in data fields
         private void btnClear_Click(object sender, EventArgs e)
         {
             if(
@@ -142,6 +163,7 @@ namespace Holloman_SalesTaxCalc_Project
             }
         }
 
+        //Runs math, and builds sentence to state total calculations
         private void btnTotalCheck_Click(object sender, EventArgs e)
         {
             if (
@@ -241,12 +263,15 @@ namespace Holloman_SalesTaxCalc_Project
         }
 
 
-
+        /**Utilitarian Methods**/
+        
+        //Grabs user input for price
         public string price()
         {
             return txtPrice.Text;
         }
 
+        //Adds warrenty costs to price, then calculates the total price
         public decimal CalcPrice(string price, decimal warranty)
         {
             decimal calcprice = 0m;
@@ -302,12 +327,14 @@ namespace Holloman_SalesTaxCalc_Project
             return totalprice;
         }
 
+        //Converts the calculated price into a currency string
         public string PriceTotal(decimal Cal)
         {
             string PriceTotal = Cal.ToString("C2");
             return PriceTotal;
         }
 
+        //Truncates decimal value to the hundreths value
         public decimal Trunc(decimal stax)
         {
             stax = stax * 100;
@@ -315,6 +342,7 @@ namespace Holloman_SalesTaxCalc_Project
             return stax = stax / 100;
         }
 
+        //Builds the warranty value
         public decimal warrantyvalue()
         {
             decimal val = 0;
