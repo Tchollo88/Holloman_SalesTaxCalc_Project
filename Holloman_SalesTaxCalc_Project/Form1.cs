@@ -242,29 +242,6 @@ namespace Holloman_SalesTaxCalc_Project
 
 
 
-        public decimal warrantyvalue()
-        {
-            decimal val = 0;
-            if(cboWarranty.SelectedIndex == 0)
-            {
-                return val;
-            }
-            else if(cboWarranty.SelectedIndex == 1)
-            {
-                val = 1000m;
-            }
-            else if(cboWarranty.SelectedIndex == 2)
-            {
-                return val = 2000m;
-            }
-            else if(cboWarranty.SelectedIndex== 3)
-            {
-                return val = 3000m;
-            }
-
-            return val;
-        }
-
         public string price()
         {
             return txtPrice.Text;
@@ -338,7 +315,30 @@ namespace Holloman_SalesTaxCalc_Project
             return stax = stax / 100;
         }
 
-            
+        public decimal warrantyvalue()
+        {
+            decimal val = 0;
+            if (cboWarranty.SelectedIndex == 0)
+            {
+                return val;
+            }
+            else if (cboWarranty.SelectedIndex == 1)
+            {
+                val = 1000m;
+            }
+            else if (cboWarranty.SelectedIndex == 2)
+            {
+                return val = 2000m;
+            }
+            else if (cboWarranty.SelectedIndex == 3)
+            {
+                return val = 3000m;
+            }
+
+            return val;
+        }
+
+
     }
 
 }
