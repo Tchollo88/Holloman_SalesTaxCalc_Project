@@ -152,7 +152,7 @@ namespace Holloman_SalesTaxCalc_Project
                )
             {
                 lblTotalln1.Text = "The chosen " + cboVType.SelectedItem.ToString() + " with ";
-                lblTotalln2.Text = cboWarranty.SelectedItem.ToString() + " warranty, will cost " + "$" + CalcPrice(price(), warrantyvalue());
+                lblTotalln2.Text = cboWarranty.SelectedItem.ToString() + " warranty, will cost " + PriceTotal(CalcPrice(price(), warrantyvalue()));
             }
             else if(
                     txtPrice.Text == "" &&
@@ -323,6 +323,12 @@ namespace Holloman_SalesTaxCalc_Project
             }
            
             return totalprice;
+        }
+
+        public string PriceTotal(decimal Cal)
+        {
+            string PriceTotal = Cal.ToString("C2");
+            return PriceTotal;
         }
 
         public decimal Trunc(decimal stax)
