@@ -293,7 +293,7 @@ namespace Holloman_SalesTaxCalc_Project
             }
             if(lstState.SelectedIndex == 1)
             {
-                stax = 1m;
+                stax = 1;
                 return totalprice = ncalcprice + stax;
             }
             if(lstState.SelectedIndex == 2)
